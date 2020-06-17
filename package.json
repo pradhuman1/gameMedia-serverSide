@@ -1,0 +1,40 @@
+{
+  "name": "gameMedia-serverSide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec yarn restart",
+    "build": "babel src --out-dir dist --copy-files",
+    "restart": "rimraf dist && yarn build && yarn start",
+    "start": "node dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradhuman1/gameMedia-serverSide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradhuman1/gameMedia-serverSide/issues"
+  },
+  "homepage": "https://github.com/pradhuman1/gameMedia-serverSide#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "cors": "^2.8.5",
+    "mongoose": "^5.9.19",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
+  }
+}
